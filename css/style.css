@@ -1,0 +1,82 @@
+@import 'normalize.css';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #000;
+  background: url(../images/fuji-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.darken,
+.scanlines {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+
+.darken {
+  z-index: 8;
+  background: #000;
+  opacity: 0.4;
+}
+
+.scanlines {
+  z-index: 9;
+  background: url(../images/pix2.png);
+  opacity: 0.3;
+  background-position: 50% 50%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: perspective(1px) translateY(-50%) translateX(-50%);
+  -ms-transform: perspective(1px) translateY(-50%) translateX(-50%);
+  transform: perspective(1px) translateY(-50%) translateX(-50%);
+  margin: 0 auto;
+  text-align: center;
+  z-index: 10;
+}
+
+.container h1 {
+  display: none;
+}
+
+.container svg {
+  max-width: 100%;
+}
+
+.st0{
+  fill: #fff;
+}
+
+p {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+  color: #999;
+}
